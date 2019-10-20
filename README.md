@@ -1,18 +1,22 @@
 # Fission Live from VSCode
+<img src="assets/logo.png" alt="drawing" width="150"/>
+
 Fission Live lets you instantly update files, directories and obviously websites directly to IPFS and serve them anywhere. This lets us all quickly collaborate on projects, instantly share files from the CLI all in a way that's open by default, fast and available across the planet.
 
 ## Features
+
+### Fission Up
+<img src="assets/demo.gif" alt="drawing"/>
+Push a your project or an individual folder or file to IPFS and share it easily using a fission domain. E.g. `yourusername.fission.app`
+
+### Fission Watch
+The same as fission up, however we keep an eye on your local changes and up date your fission site to always point at your latest version.
+
 ### Fission Register
 We issue you a username and password and create a `.fission.yaml` in your home directory that stores them for you.
 
 ### Fission Login
 _Login to an existing account
-
-### Fission Up
-Push a your project or an individual folder or file to IPFS and share it easily using a fission domain. E.g. `yourusername.fission.app`
-
-### Fission Watch
-The same as fission up, however we keep an eye on your local changes and up date your fission site to always point at your latest version.
 
 ## Requirements
 
