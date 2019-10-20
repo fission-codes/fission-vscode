@@ -1,0 +1,53 @@
+{
+  "name": "fission-vscode",
+  "displayName": "Fission",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "fission",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "enableProposedApi": true,
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:fissionCommand.register",
+    "onCommand:fissionCommand.login",
+    "onCommand:fissionCommand.watch",
+    "onCommand:fissionCommand.up"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fissionCommand.register",
+        "title": "Fission: Register"
+      },
+      {
+        "command": "fissionCommand.login",
+        "title": "Fission: Login"
+      },
+      {
+        "command": "fissionCommand.up",
+        "title": "Fission: Up"
+      },
+      {
+        "command": "fissionCommand.watch",
+        "title": "Fission: Watch"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "tslint -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.40",
+    "@types/vscode": "^1.33.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.5.1"
+  }
+}
