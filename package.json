@@ -15,7 +15,11 @@
     "onCommand:fissionCommand.register",
     "onCommand:fissionCommand.login",
     "onCommand:fissionCommand.watch",
-    "onCommand:fissionCommand.up"
+    "onCommand:fissionCommand.watchFile",
+    "onCommand:fissionCommand.watchFolder",
+    "onCommand:fissionCommand.up",
+    "onCommand:fissionCommand.upFile",
+    "onCommand:fissionCommand.upFolder"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -33,8 +37,24 @@
         "title": "Fission: Up"
       },
       {
+        "command": "fissionCommand.upFile",
+        "title": "Fission: Up Current File"
+      },
+      {
+        "command": "fissionCommand.upFolder",
+        "title": "Fission: Up Current Folder"
+      },
+      {
         "command": "fissionCommand.watch",
-        "title": "Fission: Watch"
+        "title": "Fission: Watch Project"
+      },
+      {
+        "command": "fissionCommand.watchFile",
+        "title": "Fission: Watch Current File"
+      },
+      {
+        "command": "fissionCommand.watchFolder",
+        "title": "Fission: Watch Current Folder"
       }
     ]
   },
