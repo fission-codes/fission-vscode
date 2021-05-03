@@ -21,9 +21,9 @@ export function activate(context: vscode.ExtensionContext) {
 const runCommandOnFile = (command: string) => () => {
   const uri = getOpenFileURI();
   if (uri) {
-    sendAndFocus(`${command} ${uri.fsPath}`)()
+    sendAndFocus(`${command} ${uri.fsPath}`)();
   }
-}
+};
 
 /**
  * Runs a given command with the current folder path as an argument
@@ -32,9 +32,9 @@ const runCommandOnFolder = (command: string) => () => {
   const uri = getOpenFileURI();
   if (uri) {
     const folderPath = uri.fsPath.split('/').slice(1, -1).join('/');
-    sendAndFocus(`${command} /${folderPath}`)()
+    sendAndFocus(`${command} /${folderPath}`)();
   }
-}
+};
 
 /**
  * Gets the current URI of the open text editor
@@ -47,13 +47,13 @@ const getOpenFileURI = () => {
     vscode.window.showErrorMessage('No editor active');
     return undefined;
   }
-}
+};
 
 /**
  * Opens a terminal and sends it a command
  */
 const sendAndFocus = (command: string) => () => {
-  const terminal = quickGetTerminal()
+  const terminal = quickGetTerminal();
   if (terminal) {
     terminal.show(true);
     terminal.sendText(command);
@@ -61,7 +61,7 @@ const sendAndFocus = (command: string) => () => {
   } else {
     vscode.window.showErrorMessage('Uh oh! No active terminals found...');
   }
-}
+};
 
 /**
  * Quickly get an existing terminal or open a new one in the case one doesn't exist
@@ -70,5 +70,5 @@ function quickGetTerminal(): vscode.Terminal | undefined {
   const terminals = <vscode.Terminal[]>(<any>vscode.window).terminals;
   return terminals.length > 0
     ? terminals[0]
-    : vscode.window.createTerminal("Fission");;
+    : vscode.window.createTerminal("Fission");
 }
