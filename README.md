@@ -46,8 +46,7 @@ Check the [Fission Installation Guide](https://guide.fission.codes/installation)
 
 #### MacOS
 ```bash
-brew tap fission-suite/fission
-brew install fission-cli
+brew install fission-suite/fission/fission-cli
 ```
 
 #### Linux / Windows Subsystem
