@@ -40,7 +40,7 @@ To start the local IPFS daemon:
 brew services start ipfs
 ```
 
-Check the [Fission Installation Guide](https://guide.fission.codes/installation) for extended instructions for all platforms.
+Check the [Fission Installation Guide](https://guide.fission.codes/developers/installation) for extended instructions for all platforms.
 
 ### Installing Fission
 
