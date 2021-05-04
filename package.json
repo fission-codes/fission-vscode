@@ -12,49 +12,39 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:fissionCommand.register",
-    "onCommand:fissionCommand.login",
-    "onCommand:fissionCommand.watch",
-    "onCommand:fissionCommand.watchFile",
-    "onCommand:fissionCommand.watchFolder",
-    "onCommand:fissionCommand.up",
-    "onCommand:fissionCommand.upFile",
-    "onCommand:fissionCommand.upFolder"
+    "onCommand:fissionCommand.setup",
+    "onCommand:fissionCommand.whoami",
+    "onCommand:fissionCommand.appRegister",
+    "onCommand:fissionCommand.appInfo",
+    "onCommand:fissionCommand.appPublish",
+    "onCommand:fissionCommand.appPublishWatch"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "fissionCommand.register",
-        "title": "Fission: Register"
+        "command": "fissionCommand.setup",
+        "title": "Fission: Setup"
       },
       {
-        "command": "fissionCommand.login",
-        "title": "Fission: Login"
+        "command": "fissionCommand.whoami",
+        "title": "Fission: Show Current User"
       },
       {
-        "command": "fissionCommand.up",
-        "title": "Fission: Up"
+        "command": "fissionCommand.appRegister",
+        "title": "Fission: Register App"
       },
       {
-        "command": "fissionCommand.upFile",
-        "title": "Fission: Up Current File"
+        "command": "fissionCommand.appInfo",
+        "title": "Fission: Show App Info"
       },
       {
-        "command": "fissionCommand.upFolder",
-        "title": "Fission: Up Current Folder"
+        "command": "fissionCommand.appPublish",
+        "title": "Fission: Publish App"
       },
       {
-        "command": "fissionCommand.watch",
-        "title": "Fission: Watch Project"
-      },
-      {
-        "command": "fissionCommand.watchFile",
-        "title": "Fission: Watch Current File"
-      },
-      {
-        "command": "fissionCommand.watchFolder",
-        "title": "Fission: Watch Current Folder"
+        "command": "fissionCommand.appPublishWatch",
+        "title": "Fission: Watch and Publish App"
       }
     ]
   },
