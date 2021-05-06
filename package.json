@@ -1,9 +1,9 @@
 {
-  "name": "fission-vscode",
+  "name": "fission",
   "displayName": "Fission",
-  "description": "",
+  "description": "Fast app publishing powered by IPFS",
   "version": "0.0.1",
-  "publisher": "fission",
+  "publisher": "fissioncodes",
   "engines": {
     "vscode": "^1.33.0"
   },
@@ -48,16 +48,27 @@
       }
     ]
   },
+  "homepage": "https://fission.codes",
+  "bugs": {
+    "url": "https://github.com/fission-suite/fission-vscode/issues",
+    "email": "support@fission.codes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fission-suite/fission-vscode.git"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "tslint -p ./"
+    "lint": "tslint -p ./",
+    "deploy": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "^6.0.40",
     "@types/vscode": "^1.33.0",
     "tslint": "^5.16.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "vsce": "^1.88.0"
   }
 }
