@@ -2,7 +2,7 @@
   "name": "fission",
   "displayName": "Fission",
   "description": "Fast app publishing powered by IPFS",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "fissioncodes",
   "engines": {
     "vscode": "^1.33.0"
