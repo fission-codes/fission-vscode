@@ -7,10 +7,10 @@
   "engines": {
     "vscode": "^1.33.0"
   },
-  "enableProposedApi": true,
   "categories": [
     "Other"
   ],
+  "icon": "assets/logo.png",
   "activationEvents": [
     "onCommand:fissionCommand.setup",
     "onCommand:fissionCommand.whoami",
