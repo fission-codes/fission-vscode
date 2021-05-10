@@ -13,6 +13,7 @@
   "icon": "assets/logo.png",
   "activationEvents": [
     "onCommand:fissionCommand.setup",
+    "onCommand:fissionCommand.login",
     "onCommand:fissionCommand.whoami",
     "onCommand:fissionCommand.appRegister",
     "onCommand:fissionCommand.appInfo",
@@ -25,6 +26,10 @@
       {
         "command": "fissionCommand.setup",
         "title": "Fission: Setup"
+      },
+      {
+        "command": "fissionCommand.login",
+        "title": "Fission: Link Account to a Web Browser"
       },
       {
         "command": "fissionCommand.whoami",
