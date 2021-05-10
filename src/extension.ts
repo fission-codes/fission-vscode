@@ -5,6 +5,9 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand('fissionCommand.setup', sendCommand("fission setup", false))
   )
   context.subscriptions.push(
+    vscode.commands.registerCommand('fissionCommand.login', sendCommand("fission login", false))
+  )
+  context.subscriptions.push(
     vscode.commands.registerCommand('fissionCommand.whoami', sendCommand("fission whoami", true))
   )
 

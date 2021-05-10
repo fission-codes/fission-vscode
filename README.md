@@ -18,6 +18,10 @@ The `fission.yaml` configuration file for your app must be in the workspace root
 
 Register a new account with Fission or link to an existing Fission account.
 
+### Fission: Link Account
+
+Link your account in a web browser or at the command line on another device.
+
 ### Fission: Show Current User
 
 Display your username.
