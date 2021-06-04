@@ -43,6 +43,7 @@ const sendCommand = (command: string, preserveFocus: boolean) => () => {
  */
 function getTerminal(): vscode.Terminal | undefined {
   const terminals = <vscode.Terminal[]>(<any>vscode.window).terminals
+    .filter((terminal: vscode.Terminal) => terminal.name === 'Fission')
   return terminals.length > 0
     ? terminals[0]
     : vscode.window.createTerminal("Fission")
