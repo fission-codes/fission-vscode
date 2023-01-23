@@ -1,6 +1,10 @@
-# Fission VSCode
+<div align="center">
+  <a href="https://github.com/fission-codes/fission-vscode" target="_blank">
+		<img src="https://github.com/fission-codes/kit/blob/main/images/logo-icon-coloured.png?raw=true" alt="Fission logo" width="100" />
+  </a>
 
-<img src="assets/logo.png" alt="drawing" width="150"/>
+  <h1 align="center">Fission VSCode</h1>
+</div>
 
 Publish apps to the Fission platform with this VSCode extension.
 
